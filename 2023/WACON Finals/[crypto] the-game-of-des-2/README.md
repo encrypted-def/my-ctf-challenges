@@ -2,7 +2,7 @@
 
 ## Tag
 
-DES, Linear cryptanalysis, Ciphertext only attack
+DES, Linear cryptanalysis, Ciphertext only attack, DOI 10.1007/3-540-48285-7_33(Linear Cryptanalysis Method for DES Cipher)
 
 ## Difficulty
 
