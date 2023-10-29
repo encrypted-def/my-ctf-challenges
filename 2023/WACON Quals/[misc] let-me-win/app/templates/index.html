@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WAKWAKCON 2023</title>
+</head>
+<body>
+    <h1>WAKWAKCON 2023</h1>
+    <h3>Scenario</h3>
+    <p>You are organizing WAKWAKCON 2023, which is a sub events of the WACON 2023.
+    The challenges solved by the teams are already known.
+    Each problem is worth the same scores
+    and CTF uses a dynamic scoring system, so the more people who solve it,
+    the lower the score.</p>
+
+    <p>An unethical hacking group
+      <span style="color:red">U</span>
+      <span style="color:blue">p</span>
+      <span style="color:brown">p</span>
+      <span style="color:purple">e</span>
+      <span style="color:peru">r</span>
+      <span style="color:rgb(56, 124, 115)">G</span>
+      <span style="color:rgb(156, 54, 115)">u</span>
+      <span style="color:darkcyan">e</span>
+      <span style="color:violet">e</span>
+      <span style="color:teal">s</span>
+      <span style="color:orangered">e</span>
+      <span style="color:orange">r</span>
+    is requesting that setting scoreboard as they want by choosing appropriate scroing system.</p>
+
+    <marquee>The Reward is <b>FLAG</b>!!!!! Let's go!!!🥰🥰🥰🤣</marquee>
+    
+    <p>TL;DR - Set scoreboard as requested scoreboard by manipulate scoring system.</p>
+
+    <h3>Team Lists</h3>
+    <ul>
+        {% for team in teams %}
+            <li><a href="/team/{{ team }}">{{ team }}</a></li>
+        {% endfor %}
+    </ul>
+    <h3><a href="/scoreboard_requested">Requested Scoreboard</a></h3>
+
+    <h3><a href="/setting">Set Scoring System</a></h3>
+
+</body>
+</html>

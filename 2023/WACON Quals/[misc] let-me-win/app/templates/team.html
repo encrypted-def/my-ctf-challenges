@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ team_name }}</title>
+</head>
+<body>
+    <h1>{{ team_name }} Solves..</h1>
+    <ul>
+        {% for problem in team_problems %}
+            <li>{{ problem }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

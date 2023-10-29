@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+</head>
+<body>
+    <h1>Settings</h1>
+    <ul>
+        <li> An each score should <b>strictly decreasing</b> if the number of solver is increased </li>
+        <li> An each score should be greater than 0, less than 1,000,000,000 </li>
+    </ul>
+    <form action="/check" method="post">
+        {% for i in L %}
+            Scores for {{i[0]}} solve(s) : <input type="number" name="input{{i[0]}}" value={{i[1]}}><br>
+        {% endfor %}
+        <!-- 나머지 입력박스도 추가 -->
+        <input type="submit" value="Apply">
+    </form>
+</body>
+</html>

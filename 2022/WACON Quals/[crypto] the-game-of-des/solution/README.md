@@ -1,0 +1,5 @@
+# [crypto] The Game of DES
+
+## Solution
+
+The probability that every byte of the ciphertext is printable ASCII when using a random key is approximately $2^{-96}$, making it practically impossible. However, DES has a vulnerability called weak keys, where encrypting a message $M$ with key $K$ and then encrypting it with key $K'$ results in the original message $M$. By exploiting this vulnerability, performing 42 encryptions with keys in the pattern $K, K', K, K', \dots$ will yield the ciphertext that matches the original message, allowing you to obtain printable ASCII. It's worth noting that the original weak keys do not satisfy the condition of having different bytes for each key, but in DES, the least significant bit of each byte is a parity bit, and Python's DES module ignores this bit, allowing you to meet the condition.

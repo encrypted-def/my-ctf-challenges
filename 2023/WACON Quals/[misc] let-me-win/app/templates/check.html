@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scoreboard</title>
+</head>
+<body>
+    <h1>Scoreboard</h1>
+    <ol>
+        {% for item in ranking %}
+            <li>{{ item[1] }} {{item[0]}}</li>
+        {% endfor %}
+    </ol>
+    From
+    <span style="color:red">U</span>
+    <span style="color:blue">p</span>
+    <span style="color:brown">p</span>
+    <span style="color:purple">e</span>
+    <span style="color:peru">r</span>
+    <span style="color:rgb(56, 124, 115)">G</span>
+    <span style="color:rgb(156, 54, 115)">u</span>
+    <span style="color:darkcyan">e</span>
+    <span style="color:violet">e</span>
+    <span style="color:teal">s</span>
+    <span style="color:orangered">e</span>
+    <span style="color:orange">r</span>
+    :
+    {{msg}}
+</body>
+</html>
