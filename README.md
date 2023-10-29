@@ -2,7 +2,7 @@
 
 This is the list of the challenges made by me.
 
-If you have any questions, feel free to leave a question on `issue` tab.
+If you have any questions, feel free to leave a question on `Issues` tab.
 
 
 |        **Challenge Name**       |     **CTF Name**     | **Difficulty** |                                 **Tag**                                 |                                        **References**                                       |
