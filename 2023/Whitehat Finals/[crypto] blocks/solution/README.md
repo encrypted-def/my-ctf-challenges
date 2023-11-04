@@ -6,7 +6,7 @@ For simplicity, we will refer to `0000...00` as `BLOCK0`, `0000...01` as `BLOCK1
 
 Now let's look at the characteristics of each mode.
 
-First, ECB is iv, and regardless of the index of the block, if the plaintexts are identical, the same ciphertext will result.
+In ECB, regardless of the index of the block and iv, if the plaintexts are identical, the same ciphertext will result.
 
 CBC considers the decryption process of obtaining a plaintext from a ciphertext, given two plaintext-ciphertext pairs `(pt1, ct1), (pt2, ct2)`. Then, if `ct1[i] = ct2[i]`, then `pt1[i] ^ ct1[i-1] = pt2[i] ^ ct2[i-1]`, independent of `iv`. If `i = 0`, then `pt1[i] ^ iv1 = pt2[i] ^ iv2`.
 
